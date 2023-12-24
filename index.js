@@ -4,6 +4,7 @@ const cors = require("cors");
 
 app.use(cors());
 app.use(express.json());
+app.use(express.static("dist"));
 
 const unknownEndpoint = (request, response) => {
   response.status(404).send({ error: "unknown endpoint" });
@@ -39,6 +40,7 @@ let notes = [
 
 app.get("/", (req, res) => {
   res.send("<h1>Hello World!</h1>");
+  // res.json(notes);
 });
 
 app.get("/api/notes", (req, res) => {
