@@ -30,6 +30,11 @@ let notes = [
     content: "GET and POST are the most important methods of HTTP protocol too",
     important: true,
   },
+  {
+    id: 5,
+    content: "GET and POST are the most important methods of HTTP protocol three",
+    important: true,
+  },
 ];
 
 app.get("/", (req, res) => {
