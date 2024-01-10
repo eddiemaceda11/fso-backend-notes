@@ -13,7 +13,7 @@ mongoose
     console.log("error connecting to MongoDB:", error.message);
   });
 
-const noteSchema = new mongoose.schema({
+const noteSchema = new mongoose.Schema({
   content: String,
   important: Boolean,
 });
